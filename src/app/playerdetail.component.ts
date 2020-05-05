@@ -8,14 +8,16 @@ import { ActivatedRoute } from '@angular/router';
     template: `<h3>Player Details for Player Id {{playerID}}</h3>
                 <div *ngFor='let player of players'>
                     <div *ngIf='player.id === playerID'>
+                        <img [src]='player.imagePth'><br>
                         <span>{{player.name}}</span><br>
                         <span>{{player.position}}</span><br>
-                        <img [src]='player.imagePth'>
+                        
                     </div>
                 </div>
     `,
     styles: [`
         img{
+            margin : 15px;
             width:150px;
             height:150px;
         }

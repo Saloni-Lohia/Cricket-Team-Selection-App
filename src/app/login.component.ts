@@ -6,11 +6,17 @@ import { Router } from '@angular/router';
     selector: 'login',
     template: `
         <h3>Login Component!</h3>
+        <div class="container">
         Enter Username: <input type='text' [(ngModel)]='name' /> <br/> 
         Enter Password: <input type='text' [(ngModel)]='password' /> <br/>
-        <button (click)='login()'>Login</button>
+        <button type="button" class="btn btn-success" (click)='login()'>Login</button>
+        </div>
     `,
-    styles: [``],
+    styles: [`
+    input{
+        margin : 10px;
+    }
+    `],
 })
 export class LoginComponent {
     name:string='';

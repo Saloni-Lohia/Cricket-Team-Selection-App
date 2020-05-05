@@ -21,7 +21,7 @@ import { LoginService } from './loginService.service';
             <td>{{player.name}}</td>
             <td>{{player.position}}</td>
             <td><img [src]=player.imagePth></td>
-            <td><button *ngIf="isAdmin" (click)="showDetails(player)">Details</button></td>
+            <td><button class="btn btn-warning" *ngIf="isAdmin" (click)="showDetails(player)">Details</button></td>
             <td><addtoteam [selectedPlayer]="player"></addtoteam></td>
         </tr>
     </table>
@@ -39,12 +39,15 @@ import { LoginService } from './loginService.service';
       float: left;
       margin-left: 50px;
     }
+    td{
+      padding : 15px;
+    }
       table caption{
       text-align: center;
     }       
       th{
       text-align: center;
-      background-color: peachpuff;
+      background-color: royalblue;
       fontWeight: bold;
     }
       div{
@@ -75,7 +78,7 @@ export class PlayersComponent{
     }
     showDetails(player)
     {
-        alert(player.id+' '+player.name+' '+player.position);   //
+        alert("Player ID: "+player.id+'\nPlayer Name: '+player.name+'\nPlayer Position: '+player.position);   //
     }
 
     

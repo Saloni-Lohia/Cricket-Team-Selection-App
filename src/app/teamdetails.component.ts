@@ -19,7 +19,7 @@ import { TeamService } from './team.service';
             <td><a [routerLink]="['playerdetails',player.id]">{{player.name}}</a></td>
             <td>{{player.position}}</td>
             <td><img [src]=player.imagePth></td>
-            <td><button (click)='remove(i)'>Remove</button></td>
+            <td id="remove"><button class="btn btn-danger" (click)='remove(i)'>Remove</button></td>
         </tr>
     </table>
     <div>
@@ -28,15 +28,24 @@ import { TeamService } from './team.service';
 `,
 styles: [`
 h1{
-    text-align:left;
+    text-align:center;
 }
 img{
+    padding : 10px;
     width:150px;
     height:150px;
 }
+#remove{
+    padding : 20px;
+}
+table{
+    margin-left : 100px;
+}
 th{
-    text-align:left;
-    background-color:peachpuff;
+    width : 80px;
+    height : 30px;
+    text-align: center;
+    background-color:royalblue;
     fontWeight:bold;
 }`],
 })

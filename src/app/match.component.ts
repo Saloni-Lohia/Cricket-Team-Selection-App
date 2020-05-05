@@ -9,7 +9,7 @@ import { MatchService } from './match.service';
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <div class="container">
-  <table class="table">
+  <table class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>Match Type</th>
@@ -29,7 +29,16 @@ import { MatchService } from './match.service';
   </table>
 </div>
     `,
-    styles: [``],
+    styles: [
+      `
+      table{
+        background-color: grey;
+      }
+      th{
+        text-align: center;
+      }
+      
+      `],
     providers:[MatchService]
 })
 export class MatchComponent {
