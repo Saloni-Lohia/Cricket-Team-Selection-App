@@ -11,6 +11,7 @@ import { Component} from '@angular/core';
     <div id='header'>
         <app-header></app-header>  
     </div>
+    <h4>The India women's national cricket team, nicknamed the Women in Blue, represents the country of India in international women's cricket. </h4>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -22,13 +23,13 @@ import { Component} from '@angular/core';
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="./assets/images/img2.jpg" alt="...">
+      <img src="./assets/images/img2.jpeg" alt="...">
       <div class="carousel-caption">
         ...
       </div>
     </div>
     <div class="item">
-      <img src="./assets/images/img1.jpg" alt="...">
+      <img src="./assets/images/img1.jpeg" alt="...">
       <div class="carousel-caption">
         ...
       </div>

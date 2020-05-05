@@ -31,10 +31,6 @@ export class LoginComponent {
             {
                 this.router.navigate(['/players']);
             }
-            /*else if(this.name==='Guest'&&this.password==='Guest')
-            {
-                this.router.navigate(['/home']);
-            }*/
             else
             {
                 this.router.navigate(['/home']);

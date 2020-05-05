@@ -36,7 +36,7 @@ export class TeamService {
                 //console.log(this.team);
                 this.myTeam=JSON.stringify(this.team);
                 this.teamSource.next(this.myTeam);
-                alert("Added successfully");
+                alert("Player Added successfully");
 
                 
             }

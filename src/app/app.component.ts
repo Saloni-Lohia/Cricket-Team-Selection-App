@@ -11,5 +11,5 @@ import { LoginService } from './loginService.service';
               ]
 })
 export class AppComponent {
-  title = 'CricketTeam';
+  title = 'CricketTeamSelection';
 }

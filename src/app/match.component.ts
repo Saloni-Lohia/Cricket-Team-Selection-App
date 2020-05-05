@@ -15,7 +15,7 @@ import { MatchService } from './match.service';
         <th>Match Type</th>
         <th>Ground Name</th>
         <th>Opposition Team</th>
-        <th>Date Of Match</th>
+        <th>Match Date</th>
       </tr>
     </thead>
     <tbody>
