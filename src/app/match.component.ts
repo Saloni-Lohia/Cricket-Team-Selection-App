@@ -12,7 +12,7 @@ import { MatchService } from './match.service';
   <table class="table table-hover table-bordered">
     <thead>
       <tr>
-        <th>Match Type</th>
+        <th>Match Format</th>
         <th>Ground Name</th>
         <th>Opposition Team</th>
         <th>Match Date</th>

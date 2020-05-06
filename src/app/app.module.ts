@@ -9,12 +9,12 @@ import { AddToTeamComponent } from './addtoteam.component';
 import{ TeamDetailsComponent} from './teamdetails.component'
 import { AngularWebStorageModule } from 'angular-web-storage';
 import{FormsModule} from '@angular/forms';
-import { HeaderComponent } from './header.component';
+import { HeaderComponent } from './appheader.component';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home.component';
 import { MatchComponent } from './match.component';
 import { PageNotFoundComponent } from './pagenotfound.component';
-import { PlayerDetailsComponent } from './playerdetail.component';
+import { PlayerDetailsComponent } from './playerdetails.component';
 
 let routes:Routes =[
   {

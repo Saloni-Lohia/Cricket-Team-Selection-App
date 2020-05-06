@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Player } from './player';
+import { Player } from './players';
 import { TeamService } from './team.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'playerdetails',
-    template: `<h3>Player Details for Player Id {{playerID}}</h3>
+    template: `<h3>Player Details for Player ID {{playerID}}</h3>
                 <div *ngFor='let player of players'>
                     <div *ngIf='player.id === playerID'>
                         <img [src]='player.imagePth'><br>

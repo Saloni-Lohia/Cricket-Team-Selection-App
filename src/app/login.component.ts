@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
     selector: 'login',
     template: `
-        <h3>Login Component!</h3>
+        <h3>Login Here</h3>
         <div class="container">
         Enter Username: <input type='text' [(ngModel)]='name' /> <br/> 
         Enter Password: <input type='text' [(ngModel)]='password' /> <br/>
@@ -16,6 +16,11 @@ import { Router } from '@angular/router';
     input{
         margin : 10px;
     }
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
     `],
 })
 export class LoginComponent {

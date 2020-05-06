@@ -24,12 +24,13 @@ import { Component} from '@angular/core';
     <div class="item active">
       <img src="./assets/images/img2.jpg" alt="...">
       <div class="carousel-caption">
+      <h4>The India women's national cricket team, nicknamed the Women in Blue, represents the country of India in international women's cricket. </h4>
       </div>
     </div>
     <div class="item">
       <img class="img-responsive center-block" src="./assets/images/img1.jpg" alt="...">
       <div class="carousel-caption">
-        ...
+        <h4>The Indian Women Cricket Team has been the Champions of "The Asia Cup" in 2006.</h4>
       </div>
     </div>
     <div class="item">

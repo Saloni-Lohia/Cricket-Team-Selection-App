@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Player } from './player';
-import { PlayerService } from './player.service';
+import { Player } from './players';
+import { PlayerService } from './players.service';
 import { LoginService } from './loginService.service';
 
 @Component({
@@ -31,10 +31,12 @@ import { LoginService } from './loginService.service';
       text-align:center;
   }
     img{
+      border: 1px solid black;
       width:150px;
       height:150px
   }
   table{
+      background-color: powderblue;
       display: 'inline-block';
       float: left;
       margin-left: 50px;
@@ -46,9 +48,11 @@ import { LoginService } from './loginService.service';
       text-align: center;
     }       
       th{
+      padding : 20px;
       text-align: center;
-      background-color: royalblue;
+      background-color: dodgerblue;
       fontWeight: bold;
+      font-size: 15px;
     }
       div{
       float: right;
@@ -66,7 +70,7 @@ export class PlayersComponent{
     constructor(playerService:PlayerService,loginService:LoginService) { 
         this.players=playerService.getPlayers();
         this.name=loginService.getName();
-        if(this.name==='Admin')
+        if(this.name==='Admin'||this.name==='admin')
         {
           this.isAdmin=true;
         }

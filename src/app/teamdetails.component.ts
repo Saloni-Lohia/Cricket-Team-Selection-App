@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Player } from './player';
+import { Player } from './players';
 import { TeamService } from './team.service';
 
 @Component({
@@ -39,13 +39,14 @@ img{
     padding : 20px;
 }
 table{
+    background-color: powderblue;
     margin-left : 100px;
 }
 th{
     width : 80px;
     height : 30px;
     text-align: center;
-    background-color:royalblue;
+    background-color:dodgerblue;
     fontWeight:bold;
 }`],
 })
